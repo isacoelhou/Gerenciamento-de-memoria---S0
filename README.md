@@ -17,7 +17,7 @@ O trace foi obtido em arquiteturas 32 bits.
 
 Lembrando que o endereço é dividido em número da página | deslocamento. O tamanho da página determina quantos bits serão utilizados para o deslocamento. 
 
-Ex: Se a página tem 4096 bytes de tamanho em uma arquitetura 32 bits, 12 bits são  necessários  para  o  deslocamento,  e  consequentemente  os  20  bits  mais  significativos representam o número da página.Lembrando que para a análise da falha de páginas, não énecessário analisar todas as referências à  memória,  apenas  a  página queserá  acessada.  
+Ex: Se a página tem 4096 bytes de tamanho em uma arquitetura 32 bits, 12 bits são  necessários  para  o  deslocamento,  e  consequentemente  os  20  bits  mais  significativos representam o número da página.Lembrando que para a análise da falha de páginas, não énecessário analisar todas as referências à  memória,  apenas  a  página que será  acessada.  
 
 Portanto,a  sequência  de  dois  acessos  ao endereço  B5E723DC,  será  analisado  apenas  uma  vez  pois  acessam  a  mesma  página. Nesse trabalho,  para  determinar  a  página  acessada  será  necessário  construir  o “reference string”considerando o tamanho da página, conforme apresentado em sala de aula.
 
