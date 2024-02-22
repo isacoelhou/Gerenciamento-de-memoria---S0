@@ -106,7 +106,7 @@ public class LeitorOPT {
                 System.out.println("i " + nextOccurrence);
                 System.out.println("line " + line);                    
                 
-                writer.write(line + ", " + nextOccurrence); // Escreve a página seguida pelo próximo número de linha
+                writer.write(line + "," + nextOccurrence); // Escreve a página seguida pelo próximo número de linha
                 writer.newLine(); // Adicionar uma nova linha após cada elemento
                  lineNumber++;
             }
