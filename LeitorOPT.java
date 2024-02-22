@@ -124,6 +124,7 @@ public class LeitorOPT {
 
     private static int fileNextOcc(String filePath, String page, int currentLine) {
         try {
+            int infinity = 99999999;
             BufferedReader reader = new BufferedReader(new FileReader(filePath));
             List<String> entracys = new ArrayList<>();
             System.out.println("current line " + currentLine);
@@ -146,7 +147,7 @@ public class LeitorOPT {
                     return indice;
                 }
             }       
-            return 0;
+            return infinity;
         } catch (IOException e) {
             e.printStackTrace();
         }
